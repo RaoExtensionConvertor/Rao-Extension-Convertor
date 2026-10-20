@@ -3,7 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>All Extension Converter</title>
+
+<!-- SEO Meta Tags -->
+<title>Rao Extension Converter - Free Online File & Image Converter</title>
+<meta name="description" content="Convert images, PDF, documents, audio, and code files instantly in your browser for free. Secure, fast, private file conversion with no sign-up required.">
+<meta name="keywords" content="online file converter, extension converter, image converter, PDF converter, browser file converter, free file conversion">
+<link rel="canonical" href="https://raoextensionconvertor.online/">
+
+<!-- Open Graph Tags -->
+<meta property="og:title" content="Rao Extension Converter - Free Online File & Image Converter">
+<meta property="og:description" content="Convert images, documents, audio, and code securely right inside your browser without uploading to any server.">
+<meta property="og:url" content="https://raoextensionconvertor.online/">
+<meta property="og:type" content="website">
+
+<!-- Monetag Ads Scripts (Head Placements) -->
+<script src="https://quge5.com/88/tag.min.js" data-zone="298717" async data-cfasync="false"></script>
+<script src="https://5gvci.com/act/files/tag.min.js?z=12076309" data-cfasync="false" async></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F5F7FC;--surf:#fff;--ink:#0B1220;--mute:#5A6A84;--line:#E2E8F3;--sh:0 20px 60px rgba(15,23,42,.12);--acc:#2563EB;--acc2:#06B6D4;--accink:#fff;--f:'Plus Jakarta Sans',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -57,6 +73,11 @@ label{display:block;font-size:12px;font-weight:800;color:var(--mute);margin-bott
 #go{width:100%;margin-top:16px;padding:16px;border:0;border-radius:15px;font-weight:800;font-size:18px;letter-spacing:.01em;color:var(--accink);background:linear-gradient(135deg,var(--acc),var(--acc2));box-shadow:0 10px 26px color-mix(in srgb,var(--acc) 40%,transparent)}
 #go:not(:disabled):hover{transform:translateY(-2px);box-shadow:0 14px 32px color-mix(in srgb,var(--acc) 50%,transparent)}
 #go:disabled{opacity:.45;box-shadow:none;cursor:not-allowed}
+
+/* Direct Link Button Styling */
+.ad-btn{display:block;width:100%;margin-top:12px;padding:12px;text-align:center;background:linear-gradient(135deg,#EA580C,#E11D48);color:#fff;font-weight:800;font-size:14px;border-radius:12px;text-decoration:none;box-shadow:0 6px 16px rgba(234,88,12,.3);transition:transform .15s}
+.ad-btn:hover{transform:translateY(-2px)}
+
 #msg{margin:14px 0 0;min-height:1.4em;color:var(--mute);font-size:15px}
 #msg.err{color:#DC2626}
 #out a,#out button{width:100%;text-align:left;font:inherit;display:block;margin-top:10px;padding:14px 16px;border:2px solid var(--acc);border-radius:14px;color:var(--ink);text-decoration:none;font-weight:700;word-break:break-all;background:color-mix(in srgb,var(--acc) 9%,transparent)}
@@ -88,17 +109,20 @@ small{display:block;color:var(--mute);font-size:13px}
 </style>
 </head>
 <body>
+
 <header><div class="top">
 <div class="logo"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-3-3M18 16H6l3 3"/></svg></span>All Extension Converter</div>
 <div class="ctl" role="group" aria-label="Appearance">
 <button class="dot" data-a="ocean" aria-label="Ocean theme"></button><button class="dot" data-a="violet" aria-label="Violet theme"></button><button class="dot" data-a="sunset" aria-label="Sunset theme"></button><button class="dot" data-a="forest" aria-label="Forest theme"></button><button class="dot" data-a="royal" aria-label="Royal theme"></button><button class="dot" data-a="gold" aria-label="Gold theme"></button>
 <button class="mode" id="mode" aria-label="Toggle dark mode">◐</button>
 </div></div></header>
+
 <section class="hero">
 <h1>Convert any file in seconds</h1>
 <p class="sub">Pick the formats, add your file, and download the result. Everything runs on your device, so your files stay private.</p>
 <div class="steps"><span><i>1</i>Choose formats</span><span><i>2</i>Add your file</span><span><i>3</i>Download</span></div>
 </section>
+
 <div class="wrap"><div class="card">
 <div class="pair">
  <div><label for="from">From</label><select id="from"></select></div>
@@ -108,24 +132,33 @@ small{display:block;color:var(--mute);font-size:13px}
 <label id="drop" for="file"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></svg><b id="fname">Tap to choose a file</b><span id="fhint">or drop a file here</span></label>
 <input type="file" id="file">
 <button id="go" disabled>Convert</button>
+
+<!-- High Converting Monetag Direct Link Ad Placement -->
+<a href="https://uplcm.com/4/12076314" target="_blank" class="ad-btn">⚡ Fast Server Cloud Conversion (Optional)</a>
+
 <p id="msg" role="status"></p>
 <div id="out"></div>
 </div>
+
 <div class="chips"><p>Popular conversions</p>
 <button class="chip" data-f="jpg" data-t="pdf">JPG to PDF</button><button class="chip" data-f="png" data-t="jpg">PNG to JPG</button><button class="chip" data-f="webp" data-t="png">WEBP to PNG</button><button class="chip" data-f="pdf" data-t="png">PDF to PNG</button><button class="chip" data-f="docx" data-t="pdf">DOCX to PDF</button><button class="chip" data-f="xlsx" data-t="csv">XLSX to CSV</button><button class="chip" data-f="csv" data-t="json">CSV to JSON</button><button class="chip" data-f="md" data-t="html">MD to HTML</button>
 </div></div>
+
 <div class="feat">
 <div class="f"><h3>Private by design</h3><p>Files are converted in your browser and never uploaded.</p></div>
 <div class="f"><h3>190+ extensions</h3><p>Search any format by name in the From and To lists.</p></div>
 <div class="f"><h3>Free, no sign-up</h3><p>Open the page, convert, download. Nothing to install.</p></div>
 </div>
+
 <footer><small>Every extension is listed, but a browser can only really convert some of them: images, PDF, Word (docx), spreadsheets, text and code, and audio to WAV. The top of the To list shows the formats that work for your file. Any other file can be packed into ZIP or GZ. Formats like EXE, RAR, 7Z, PSD and video-to-video need a server and can't be converted here.</small><p class="own">Owned by Abdul Basit</p></footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
 <script>
 window.addEventListener('error',function(e){var d=document.getElementById('jserr');if(!d){d=document.createElement('div');d.id='jserr';d.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99;background:#DC2626;color:#fff;padding:10px 14px;font:600 14px sans-serif';document.body.appendChild(d)}d.textContent='Page error: '+e.message+' (line '+e.lineno+'). Please update Chrome or send this message to the developer.'});
 const $=id=>document.getElementById(id);
@@ -290,5 +323,11 @@ go.onclick=async()=>{
   go.disabled=false;
 };
 </script>
+
+<!-- Monetag Popunder, Native & Vignette Ad Scripts -->
+<script>(function(s){s.dataset.zone='12076308',s.src='https://al5sm.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<script>(function(s){s.dataset.zone='12076310',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<script>(function(s){s.dataset.zone='12076312',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
 </body>
 </html>
